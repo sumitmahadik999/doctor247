@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #333;
+    color: #262626;
     line-height: 1;
     width: unset;
 }
@@ -92,14 +92,94 @@ body {
 .btn-secondary {
     background: #302f2f;
 }
-.title {
+.banner-header {
+    padding: 2rem 0;
+}
+.banner-header h2 {
+    font-size: 2.6rem;
+}
+.banner-header p {
     font-size: 1.8rem;
-    background: url("../img/border.jpg") 50% 100% no-repeat;
+}
+.select-container {
+    background: #004585;
+    padding: 2rem 2rem;
+    box-shadow: 0px 2px 3px 0px rgba(119, 119, 119, 0.6);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(119, 119, 119, 0.6);
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(119, 119, 119, 0.6);
+}
+.select-container .custom-select {
+    background: url("../img/dropdown-arrow.png") 90% 50% no-repeat #004585;
+    border: 0;
+    font-size: 1.2rem;
+    color: #f3f9fd;
+    box-shadow: none;
+    outline: 0;
+}
+.button-container {
+    background: #90bd31;
+    box-shadow: 0px 2px 3px 0px rgba(119, 119, 119, 0.6);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(119, 119, 119, 0.6);
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(119, 119, 119, 0.6);
+}
+.button-container .search-button {
+    background: url("../img/right-arrow.png") 95% 50% no-repeat #90bd31;
+    padding: 2.2rem 2rem;
+    border: 0;
+    font-size: 1.2rem;
+    color: #f3f9fd;
+    box-shadow: none;
+    outline: 0;
+    line-height: 2rem;
+    cursor: pointer;
+}
+.title {
+    font-size: 2rem;
     padding-bottom: 15px;
 }
+.choose-option-container {
+    padding: 5rem 0 6rem;
+}
+.option-cards {
+    background: #f7f7f7;
+    padding: 160px 10px 20px;
+    height: 300px;
+}
+.choose-option-container .button {
+    border: 0;
+    border-radius: 0;
+    background: #90bd31;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.8rem 1rem;
+    box-shadow: 0px 2px 3px 0px rgba(119, 119, 119, 0.6);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(119, 119, 119, 0.6);
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(119, 119, 119, 0.6);
+}
+.card-title {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
 
+}
+.vc-card {
+    background: url(../img/vc_icon.png) 50% 60px #f7f7f7 no-repeat;
+}
+.bo-card {
+    background: url(../img/bo_icon.png) 50% 60px #f7f7f7 no-repeat;
+}
+.wc-card {
+    background: url(../img/wc_icon.png) 50% 60px #f7f7f7 no-repeat;
+}
+.dc-card {
+    background: url(../img/dc_icon.png) 50% 60px #f7f7f7 no-repeat;
+}
 .carousel-inner {
     padding-bottom: 10px;
+}
+.why-doc-container {
+    background: #004585;
+    padding: 5rem 0 6rem;
 }
 
 .carousel-item .why-dp-tab .content-div {
@@ -358,44 +438,6 @@ body {
     .header-link {
         margin-top: -10px;
     }
-    .card {
-        height: 131px;
-    }
-
-    .card-title {
-        font-size: 19px;
-        display: inline-block;
-        margin: 70px 0 10px;
-        color: #333;
-    }
-
-    .card-text {
-        font-size: 12px;
-    }
-
-    .doctor247-card {
-        background: url(../img/icon1.svg) 50% 25px #f0b436 no-repeat;
-        background-size: 25%;
-    }
-
-    .book-online-card {
-        background: url(../img/icon2.svg) 50% 25px #f0b436 no-repeat;
-        background-size: 25%;
-    }
-
-    .web-chat-card {
-        background: url(../img/icon3.svg) 50% 30px #f0b436 no-repeat;
-        background-size: 25%;
-    }
-
-    .doctor-calls-card {
-        background: url(../img/icon4.svg) 50% 22px #f0b436 no-repeat;
-        background-size: 25%;
-    }
-
-    .quick-connect-conainer .btn-secondary {
-        margin: 0 10px;
-    }
 
     .margin-t-30 {
         margin-top: 30px;
@@ -422,19 +464,10 @@ body {
     line-height: 0.5rem;
 }
 .quick-connect-conainer {
-    background: url(../img/quick-con-bg.png) 50% 30% no-repeat;
-    padding: 80px 0 25px;
     min-height: 0;
     width: 100%;
-    background-size: 100%;
+    margin-top: -60px;
 }
-
-    .quick-connect-conainer .search-button {
-        padding: 0.6rem 0.8rem;
-        margin: 0 10px;
-        border-radius: 10px;
-        width: auto;
-    }
 
     .why-dp-tab .content-div {
         min-height: 220px;
