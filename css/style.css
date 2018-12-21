@@ -134,7 +134,7 @@ body {
     cursor: pointer;
 }
 .title {
-    font-size: 2rem;
+    font-size: 2.4rem;
     padding-bottom: 15px;
 }
 .choose-option-container {
@@ -179,7 +179,46 @@ body {
 }
 .why-doc-container {
     background: #004585;
-    padding: 5rem 0 6rem;
+    padding: 4rem 0;
+}
+.why-doc-container .title {
+    color: #fff;
+}
+.feature-container {
+    background: url(../img/why-dc-bg.png) 0 0 no-repeat;
+    background-size: 100%;
+    padding: 55px 0 35px;
+}
+.feature p {
+    font-size: 1rem;
+    color: #fff;
+    margin: 70px 0 0;
+    line-height: 1.4rem;
+}
+.feature:nth-child(1) img {
+    margin-left: 50px;
+}
+.feature:nth-child(2) img {
+    margin-left: 25px;
+}
+.feature:nth-child(4) img {
+    margin-right: 20px;
+}
+.feature:nth-child(5) img {
+    margin-right: 40px;
+}
+
+.testimonial-container {
+    padding: 4rem 0 6rem;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e4f1ff+1,e2effd+23,c6d8e8+53,c0d4e4+100 */
+background: #e4f1ff; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #e4f1ff 1%, #e2effd 23%, #c6d8e8 53%, #c0d4e4 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #e4f1ff 1%,#e2effd 23%,#c6d8e8 53%,#c0d4e4 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #e4f1ff 1%,#e2effd 23%,#c6d8e8 53%,#c0d4e4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f1ff', endColorstr='#c0d4e4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.sub-title {
+    font-size: 1.8rem
 }
 
 .carousel-item .why-dp-tab .content-div {
@@ -468,43 +507,6 @@ body {
     width: 100%;
     margin-top: -60px;
 }
-
-    .why-dp-tab .content-div {
-        min-height: 220px;
-    }
-
-    .testimonial {
-        width: 70%;
-        height: auto;
-        padding: 20px 20px;
-        color: #fff;
-        font-weight: 300;
-        line-height: 1.4rem;
-        position: relative;
-        margin: -250px 0 0 30%;
-    }
-    .img-div img {
-        width: 60%;
-        margin-top: 80px;
-    }
-
-    .testimonial2 {
-        margin: -340px 0 0 30%;
-    }
-
-    .testimonial3 {
-        margin: -375px 0 0 0px;
-    }
-
-    .testimonial4 {
-        margin: -245px 0 0 0px;
-    }
-
-    .testimonial-container {
-        background: url("../img/testimonial-bg.png") 0 0 no-repeat;
-        min-height: 799px;
-    }
-
     .newsletter-container {
         background: url("../img/newsletter-bg.png") 0 0 no-repeat;
         min-height: 285px;
