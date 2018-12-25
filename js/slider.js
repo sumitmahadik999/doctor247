@@ -4,18 +4,18 @@ $(document).ready(function() {
       $slideBGs = $(".slide__bg"),
       diff = 0,
       curSlide = 0,
-      numOfSlides = $(".slide").length-2,
+      numOfSlides = $(".slideX").length-1,
       animating = false,
-      animTime = 500,
+      animTime = 1000,
       autoSlideTimeout,
-      autoSlideDelay = 6000,
+      autoSlideDelay = 10000,
       $pagination = $(".slider-pagi");
   
   function createBullets() {
     for (var i = 0; i < numOfSlides+1; i++) {
       var $li = $("<li class='slider-pagi__elem'></li>");
       $li.addClass("slider-pagi__elem-"+i).data("page", i);
-      if (!i) $li.addClass("active");
+      if (!i) $li.addClass("active-slide");
       $pagination.append($li);
     }
   };
@@ -44,16 +44,16 @@ $(document).ready(function() {
       manageControls();
       $slider.addClass("animating");
       $slider.css("top");
-      $(".slide").removeClass("active");
-      $(".slide-"+curSlide).addClass("active");
+      $(".slideX").removeClass("active-slide");
+      $(".slide-"+curSlide).addClass("active-slide");
       setTimeout(function() {
         $slider.removeClass("animating");
         animating = false;
       }, animTime);
     }
     window.clearTimeout(autoSlideTimeout);
-    $(".slider-pagi__elem").removeClass("active");
-    $(".slider-pagi__elem-"+curSlide).addClass("active");
+    $(".slider-pagi__elem").removeClass("active-slide");
+    $(".slider-pagi__elem-"+curSlide).addClass("active-slide");
     $slider.css("transform", "translate3d("+ -curSlide*100 +"%,0,0)");
     $slideBGs.css("transform", "translate3d("+ curSlide*50 +"%,0,0)");
     diff = 0;
