@@ -107,7 +107,7 @@ body {
 
 .select-container {
     background: #004585;
-    padding: 2rem 2rem;
+    padding: 1.4rem 2rem;
     z-index: 9;
     box-shadow: 0px 2px 3px 0px rgba(119, 119, 119, 0.6);
     -moz-box-shadow: 0px 2px 3px 0px rgba(119, 119, 119, 0.6);
@@ -133,7 +133,7 @@ body {
 
 .button-container .search-button {
     background: url("../img/right-arrow.png") 95% 50% no-repeat #90bd31;
-    padding: 2.2rem 2rem;
+    padding: 1.6rem 2rem;
     border: 0;
     font-size: 1.2rem;
     color: #f3f9fd;
@@ -179,19 +179,19 @@ body {
 }
 
 .vc-card {
-    background: url(../img/vc_icon.png) 50% 60px #f7f7f7 no-repeat;
+    background: url(../img/vc_icon.png) 50% 40px #f7f7f7 no-repeat;
 }
 
 .bo-card {
-    background: url(../img/bo_icon.png) 50% 60px #f7f7f7 no-repeat;
+    background: url(../img/bo_icon.png) 50% 40px #f7f7f7 no-repeat;
 }
 
 .wc-card {
-    background: url(../img/wc_icon.png) 50% 60px #f7f7f7 no-repeat;
+    background: url(../img/wc_icon.png) 50% 40px #f7f7f7 no-repeat;
 }
 
 .dc-card {
-    background: url(../img/dc_icon.png) 50% 60px #f7f7f7 no-repeat;
+    background: url(../img/dc_icon.png) 50% 40px #f7f7f7 no-repeat;
 }
 
 .why-doc-container {
@@ -213,7 +213,7 @@ body {
 }
 
 .feature p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #fff;
     margin: 20px 0 0;
     line-height: 1.4rem;
@@ -232,6 +232,7 @@ body {
 .current-testimonial p {
     padding: 0 45px;
     line-height: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .current-testimonial .fas {
@@ -303,7 +304,7 @@ body {
 }
 
 .footer-lady {
-    margin-top: -105px;
+    margin-top: -72px;
     margin-bottom: -25px;
 }
 
@@ -661,7 +662,7 @@ body {
     }
 
     .option-cards {
-        background: #f7f7f7;
+        /*background: #f7f7f7;*/
         padding: 160px 10px 20px;
         height: 300px;
     }
@@ -693,7 +694,7 @@ body {
     }
 
     .navbar {
-        padding: 0.9rem 0 0;
+        padding: 0.5rem 0 0;
     }
 
     .header-link {
@@ -737,7 +738,7 @@ body {
 
     .current-testimonial {
         position: relative;
-        width: 350px;
+        width: 400px;
         margin: 50px auto 90px;
     }
 
@@ -751,9 +752,9 @@ body {
     }
 
     .option-cards {
-        background: #f7f7f7;
-        padding: 160px 10px 20px;
-        height: 300px;
+        /*background: #f7f7f7;*/
+        padding: 150px 10px 20px;
+        height: 250px;
     }
 
     .choose-option-container .button {
@@ -772,7 +773,7 @@ body {
 
 .slider-container {
     position: relative;
-    height: 506px;
+    height: 480px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -803,13 +804,30 @@ body {
 }
 
 .slider-control.left {
-    left: 0;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0) 100%);
+        left: 0;
+    background: #f7f7f7;
+    opacity: 1;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    padding-top: 30px;
+    top: 185px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .slider-control.right {
-    right: 0;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.18) 100%);
+        right: 0;
+    background: #f7f7f7;
+    opacity: 1;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    padding-top: 30px;
+    top: 185px;
 }
 
 .slider-pagi {
@@ -920,7 +938,7 @@ body {
 
 .slideX:nth-child(2) .slide__bg {
     left: -50%;
-    background-image: url("../img/banner3.jpg");
+    background-image: url("../img/banner_img3.png");
 }
 
 .slideX:nth-child(2) .slide__overlay-path {
@@ -933,7 +951,7 @@ body {
 
 .slideX:nth-child(3) .slide__bg {
     left: -100%;
-    background-image: url("../img/banner1.jpg");
+    background-image: url("../img/banner_img2.png");
 }
 
 .slideX:nth-child(3) .slide__overlay-path {
@@ -1005,6 +1023,7 @@ body {
     bottom: 0%;
     left: 0%;
     height: 170px;
+    background: url("../img/black_overlay_for_banner.png") 50% 100% no-repeat;
 }
 
 .slide__text {
@@ -1147,6 +1166,7 @@ body {
 .panel {
     margin: 0;
     padding: 5px;
+    cursor: pointer;
 }
 
 .display-none {
